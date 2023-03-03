@@ -1,11 +1,10 @@
-// redux toolkit
-
+/// redux
 
 import {useSelector, useDispatch} from 'react-redux'
-import { increment, decrement } from './toolkit/reducer'
+import { increment, decrement } from './redux/action'
 
 function App() {
-    const count = useSelector((state) => state.counter.value)
+    const count = useSelector((state) => state.value)
     const dispatch = useDispatch()
 
     return (
